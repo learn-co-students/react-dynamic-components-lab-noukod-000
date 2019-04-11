@@ -75,8 +75,8 @@ describe('ColorBox', () => {
     // this one may feel tricky
     // Important to remember that we want 0.1 to be the last opacity rendered
     // This means we can continue recurring as long as we are >= 0.2 opacity
-    //const appTree = mount(<App/>)
-    //expect(appTree.find(ColorBox).length).to.equal(10) 
+    const appTree = mount(<App/>)
+    expect(appTree.find(ColorBox).length).to.equal(10) 
   })
   
 })
